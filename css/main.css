@@ -1,0 +1,1281 @@
+/* ---------------nanum-square--------------- */
+@font-face
+{
+    font-family: 'nanum-square';
+    font-weight: 200;
+    font-style: normal;
+
+    src: url(./../fonts/nanum-square/NanumSquareL.ttf),
+    url(./../fonts/nanum-square/NanumSquareL.woff);
+}
+
+@font-face
+{
+    font-family: 'nanum-square';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url(./../fonts/nanum-square/NanumSquareR.ttf),
+    url(./../fonts/nanum-square/NanumSquareR.woff);
+}
+
+@font-face
+{
+    font-family: 'nanum-square';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url(./../fonts/nanum-square/NanumSquareB.ttf),
+    url(./../fonts/nanum-square/NanumSquareB.woff);
+}
+
+@font-face
+{
+    font-family: 'nanum-square';
+    font-weight: 800;
+    font-style: normal;
+
+    src: url(./../fonts/nanum-square/NanumSquareEB.ttf),
+    url(./../fonts/nanum-square/NanumSquareEB.woff);
+}
+
+
+/* ---------------gotham--------------- */
+
+@font-face
+{
+    font-family: 'Gotham';
+    font-weight: 200;
+    font-style: normal;
+
+    src: url(./../fonts/gotham/GothamL.ttf),
+    url(./../fonts/gotham/GothamL.woff);
+}
+
+@font-face
+{
+    font-family: 'Gotham';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url(./../fonts/gotham/GothamR.ttf),
+    url(./../fonts/gotham/GothamR.woff);
+}
+
+@font-face
+{
+    font-family: 'Gotham';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url(./../fonts/gotham/GothamB.ttf),
+    url(./../fonts/gotham/GothamB.woff);
+}
+
+@font-face
+{
+    font-family: 'Gotham';
+    font-weight: 800;
+    font-style: normal;
+
+    src: url(./../fonts/gotham/GothamEB.ttf),
+    url(./../fonts/gotham/GothamEB.woff);
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+html
+{
+    font-size: 3px;
+
+    width: 100%;
+}
+
+body
+{
+    font-family: 'nanum-square';
+    font-weight: 400;
+
+    width: 100%;
+}
+
+
+/* common */
+
+
+[data-scroll-content]
+{
+    padding: 10vw 0;
+}
+
+.animateIn
+{
+    -webkit-transition: opacity 1s ease;
+         -o-transition: opacity 1s ease;
+            transition: opacity 1s ease;
+
+    opacity: 1;
+}
+
+.animateOut
+{
+    -webkit-transition: opacity 1s ease;
+         -o-transition: opacity 1s ease;
+            transition: opacity 1s ease;
+
+    opacity: 0;
+}
+
+
+.go
+{
+    font-family: 'Gotham';
+}
+
+#clear
+{
+    clear: both;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+#sec1
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+}
+
+#sec1 video
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+
+    object-fit: cover;
+}
+
+#sec1-cntnt-wrap
+{
+    position: absolute;
+    top: 0;
+
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}
+
+#sec1-cntnt-wrap div
+{
+    width: 30%;
+    height: 100%;
+}
+
+#sec1-cntnt-wrap p
+{
+    font-size: 6rem;
+
+    color: #fff;
+}
+
+#sec1 video
+{
+    width: 100%;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+header
+{
+    position: relative;
+
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url('./../img/test/test3.png') no-repeat 50% 50% / cover;
+    background-attachment: fixed;
+}
+
+
+
+
+header div
+{
+    width: 30%;
+    height: 100%;
+}
+
+header p
+{
+    font-size: 6rem;
+
+    color: #fff;
+}
+
+
+
+#main-wrap1
+{
+    position: relative;
+}
+
+
+
+#main-wrap1 p
+{
+    line-height: 1.8;
+
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+
+    float: left;
+
+    width: 220px;
+
+    text-align: left;
+}
+
+#main-wrap2
+{
+    position: relative;
+
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: center;
+
+    -ms-align-items: center;
+}
+
+#main-wrap2 img
+{
+    width: 100%;
+    margin: auto 0;
+
+    transition: 3s;
+    /* -webkit-animation: 3s ease-in-out 1.5s logom;
+            animation: 3s ease-in-out 1.5s logom; */
+}
+
+@-webkit-keyframes logom
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@-o-keyframes logom
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@-moz-keyframes logom
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes logom
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+#main-wrap2 p
+{
+    font-size: 6rem;
+    line-height: 1.8;
+
+    position: absolute;
+    bottom: 30px;
+
+        align-items: flex-end;
+
+    white-space: nowrap;
+
+    -ms-align-items: flex-end;
+}
+
+#main-wrap3 p:nth-child(1)
+{
+    line-height: 1.8;
+
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
+    display: inline-block;
+    float: right;
+
+    width: 220px;
+
+    text-align: right;
+}
+
+#main-wrap3 p:nth-child(2)
+{
+    line-height: 1.8;
+
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+
+    display: inline-block;
+    float: right;
+        align-items: flex-end;
+
+    width: 220px;
+
+    text-align: right;
+
+    -ms-align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+#sec2
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    padding: 200px 0;
+}
+
+#sec2-txtwrap
+{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#sec2-txtwrap h1
+{
+    font-size: 14rem;
+
+    margin-bottom: 40px;
+}
+
+#sec2-txtwrap p
+{
+    font-size: 14rem;
+}
+
+#sec2 img
+{
+    display: inline-block;
+
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+#sec3
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 200%;
+    padding: 200px 0;
+
+    animation: sec3_motion1 8s ease-in-out infinite;
+
+    background: linear-gradient(135deg, #fa4191, #0452fb, #fa4191);
+    background-color: rgb(152, 204, 189);
+    background-size: 300% 300%;
+}
+
+@keyframes sec3_motion1
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}
+
+#sec3 img
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+}
+
+#sec3-2
+{
+    margin-bottom: 100px;
+}
+
+#sec3-4
+{
+    padding-top: 100px;
+}
+
+
+
+#sec3 .sec3-2txt
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin: 6px 0;
+
+    -ms-align-items: center;
+}
+
+
+.sec3-2txt div
+{
+    font-size: 10rem;
+    font-weight: 600;
+
+    display: block;
+
+    width: 50%;
+
+    color: #fff;
+}
+
+/* .sec3-2txt div span
+{
+    border-bottom: solid #fff 2px;
+} */
+
+#sec3-2txt div:nth-child(1)
+{
+    background-color: rgb(26, 117, 50);
+}
+
+#sec3-2txt div:nth-child(2)
+{
+    background-color: rgb(159, 121, 69);
+}
+
+#sec3-3
+{
+    margin-top: 140px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+#sec4
+{
+    width: 100%;
+    padding: 300px 0;
+}
+
+
+
+#sec4-txtwrap
+{
+    width: 100%;
+    margin: 200px 0;
+}
+
+#sec4-txtwrap h1
+{
+    font-size: 14rem;
+
+    margin-bottom: 40px;
+}
+
+#sec4-txtwrap p
+{
+    font-size: 14rem;
+    line-height: 1.4  ;
+}
+
+
+
+#sec4-wrap
+{
+    position: relative;
+
+    width: 100%;
+}
+
+#sec4-wrap img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.sec4-page
+{
+    width: 100%;
+}
+
+.sec4-page p
+{
+    font-family: 'Gotham';
+    font-size: 84rem;
+    font-weight: 600;
+    line-height: 84rem;
+}
+
+
+#sec4-line1
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: space-between;
+
+    height: 33.3%;
+
+    -ms-align-items: center;
+}
+
+#sec4-line1 p
+{
+    display: inline-block;
+    float: left;
+
+    text-align: left;
+}
+
+#sec4-line1 span
+{
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.8;
+
+    display: inline-block;
+    float: right;
+
+    padding-right: 20px;
+
+    text-align: left;
+}
+
+#sec4-line2
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+
+    height: 33.3%;
+    margin: 4% 0;
+
+    -ms-align-items: center;
+}
+
+#sec4-line2 p
+{
+    float: left;
+
+    text-align: left;
+}
+
+
+
+#sec4-line3
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: flex-end;
+
+    height: 33.3%;
+
+    -ms-align-items: center;
+}
+
+#sec4-line3 p
+{
+    float: right;
+
+    text-align: right;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+#sec5
+{
+    font-size: 0;
+    line-height: 0;
+}
+
+
+#sec5 img
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+#sec6
+{
+    width: 100%;
+    padding-bottom: 600px;
+
+    background-color: rgb(0, 0, 0);
+}
+
+#sec6-txt-wrap
+{
+    width: 100%;
+    height: 400px;
+    padding-top: 500px;
+
+    color: #fff;
+
+    -ms-align-items: center;
+}
+
+#sec6-txt1
+{
+    display: inline-block;
+    float: left;
+
+    width: 50%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+#sec6-txt1 h1
+{
+    font-size: 40rem;
+    font-weight: 800;
+
+    float: left;
+
+    padding-bottom: 80px;
+
+    text-align: left;
+}
+
+#sec6-txt1 p
+{
+    font-size: 12rem;
+    font-weight: 800;
+    line-height: 1.6;
+
+    float: left;
+
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+#sec6-txt2
+{
+    display: inline-block;
+    float: right;
+
+    width: 50%;
+    height: 100%;
+}
+
+#sec6-cntnt-wrap
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #000;
+
+    -ms-align-items: center;
+}
+
+.sec6-cntnt
+{
+    width: 25%;
+}
+
+.sec6-cntnt img
+{
+    font-size: 8rem;
+
+    z-index: 10;
+
+    width: 100%;
+
+    color: #fff;
+}
+
+#sec6-cntnt1
+{
+    padding-right: 20px;
+}
+
+
+#sec6-cntnt2
+{
+    padding: 0 20px;
+}
+
+#sec6-cntnt3
+{
+    padding: 0 20px;
+}
+
+#sec6-cntnt4
+{
+    padding-left: 20px;
+}
+
+.sec6-txt-cntnt
+{
+    width: 100%;
+    height: 200px;
+
+    color: #fff;
+}
+
+.sec6-txt-cntnt h1
+{
+    font-size: 10rem;
+}
+
+.sec6-cntnt-margin
+{
+    width: 100%;
+    height: 40px;
+}
+
+#up
+{
+    z-index: 300;
+}
+
+#sec6txt1
+{
+    z-index: -100;
+
+    display: inline-block;
+    float: right;
+
+    width: 80%;
+    padding: 40px 0 40px 20px;
+}
+
+
+#sec6-cntnt4 div:nth-child(3)
+{
+    background: linear-gradient(90deg, #fa4191, #0452fb);
+}
+
+
+
+
+#sec6txt2
+{
+    z-index: -1;
+
+    float: left;
+
+    width: 80%;
+    padding: 40px 20px;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+#sec7
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 200px;
+
+    -ms-align-items: center;
+}
+
+#sec7-txt-wrap1
+{
+    width: 50%;
+    height: 400px;
+    margin: 300px 0 0 0;
+    padding: 0 20px;
+}
+
+#sec7-txt-wrap2
+{
+    display: inline-block;
+    float: right;
+
+    width: 40px;
+    height: 100%;
+    margin: 300px 0 0 0;
+    padding: 0 20px;
+}
+
+#sec7-wrap
+{
+    width: 100%;
+}
+
+#sec7-txt-wrap1 h1
+{
+    font-size: 40rem;
+    font-weight: 800;
+
+    float: left;
+
+    padding-bottom: 40px;
+
+    text-align: left;
+}
+
+#sec7-txt-wrap1 p
+{
+    font-size: 12rem;
+    font-weight: 800;
+    line-height: 1.6;
+
+    float: left;
+
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+#sec7-wrap img
+{
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+#sec8
+{
+    width: 100%;
+    height: 100%;
+}
+
+#sec8 h1
+{
+    font-size: 14rem;
+
+    width: 100%;
+    margin: 400px 0 0 0;
+}
+
+#sec8 video
+{
+    width: 80%;
+    margin: 100px auto;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+#sec9
+{
+    width: 100%;
+    height: 100%;
+}
+
+#sec9-scene0
+{
+    width: 100%;
+    height: 80vh;
+}
+
+#sec9-scene1
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 20vh;
+
+    -ms-align-items: center;
+}
+
+#sec9-scene1 h1
+{
+    font-size: 10rem;
+}
+
+#sec9-scene2
+{
+    width: 100%;
+    height: 50vh;
+}
+
+#sec9-scene3
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40vh;
+
+    -ms-align-items: center;
+}
+
+#sec9-scene3 h1
+{
+    font-size: 160px;
+    font-weight: 600;
+}
+
+#sec9-scene4
+{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+#sec10
+{
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+#sec10 h1
+{
+    font-size: 94rem;
+
+    display: inline-block;
+
+    transform: translateY(-100%);
+}
+
+#sec10 img
+{
+    width: 100%;
+}
+
+#sec10 img:nth-child(1)
+{
+    margin-top: 200px;
+}
+
+#sec10 img:nth-child(2)
+{
+    margin-top: 400px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+#sec11
+{
+    width: 100%;
+}
+
+#sec11-txt-wrap
+{
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+        align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    -ms-align-items: center;
+}
+
+#sec11-txt-wrap h1
+{
+    font-size: 14rem;
+
+    margin-bottom: 160px;
+}
+
+#sec11 img
+{
+    display: inline-block;
+
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+#heightLine
+{
+    width: 1px;
+    height: 400px;
+    margin: 100px auto;
+
+    background: linear-gradient(#fa4191, #0452fb);
+}
+
+
+
+
+
+
+#sec12
+{
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+#sec12 img
+{
+    display: inline-block;
+
+    width: 100%;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+#sec13
+{
+    font-size: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#sec13 img
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+#sec14
+{
+    width: 100%;
+
+    background-color: #000;
+}
+
+#sec14 img
+{
+    width: 100%;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* js-fade */
+
+
+.sa
+{
+    transition: all 1s ease-in-out;
+
+    opacity: 0;
+}
+
+.sa-up
+{
+    transform: translate(0, 100px);
+}
+
+
+.sa-down
+{
+    transform: translate(0, -100px);
+}
+
+
+.sa-right
+{
+    transform: translate(-100px, 0);
+}
+
+
+.sa-left
+{
+    transform: translate(100px, 0);
+}
+
+.sa-scaleUp
+{
+    transform: scale(.5);
+}
+
+.sa.show
+{
+    transform: none;
+
+    opacity: 1;
+}
